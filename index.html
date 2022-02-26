@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>GhostBSD</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="http://ghostbsd.org/sites/default/files/glogo.ico" type="image/vnd.microsoft.icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/ec24a3f170.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="ghostbsd-g.png" alt="" width="24" height="30">
+				</a>
+				<button class="navbar-toggler navbar-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item dropdown" data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Download
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Latest</a></li>
+								<li><a class="dropdown-item" href="#">Older versions</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Installation guide</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown" data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								About
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Project</a></li>
+								<li><a class="dropdown-item" href="#">History</a></li>
+								<li><a class="dropdown-item" href="#">License</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown" data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Community
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">News</a></li>
+								<li><a class="dropdown-item" href="#">Events</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Wiki</a></li>
+								<li><a class="dropdown-item" href="#">Forums</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown" data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Contribute
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Bugs & Feature Request</a></li>
+								<li><a class="dropdown-item" href="#">Store</a></li>
+								<li><a class="dropdown-item" href="#">Patreon</a></li>
+								<li><a class="dropdown-item" href="#">Donate</a></li>
+								<li><a class="dropdown-item" href="#">Sponsor</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown" data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Links
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">RSS feed</a></li>
+								<li><a class="dropdown-item" href="#">Twitter</a></li>
+								<li><a class="dropdown-item" href="#">LinkedIn</a></li>
+								<li><a class="dropdown-item" href="#">Reddit</a></li>
+								<li><a class="dropdown-item" href="#">Facebook</a></li>
+								<li><a class="dropdown-item" href="#">Telegram</a></li>
+								<li><a class="dropdown-item" href="#">Liberachat</a></li>
+								<li><a class="dropdown-item" href="#">Github</a></li>
+								<li><a class="dropdown-item" href="#">Patreon</a></li>
+								<li><a class="dropdown-item" href="#">YouTube</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown" data-bs-toggle="dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Acknowledgements
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Donators</a></li>
+								<li><a class="dropdown-item" href="#">Sponsors</a></li>
+								<li><a class="dropdown-item" href="#">Partners</a></li>
+								<li><a class="dropdown-item" href="#">Patrons</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="blue-gradient pattern-overlay">
+			<header class="container">
+				<div class="row text-start">
+					<div class="col-sm-12 col-md-6 col-xl-5 pb-3">
+						<img class="img-fluid" src="http://ghostbsd.org/sites/default/files/ghostbsd.png">
+						<h2>Version 22.01.12</h2>
+						<p>The latest version of the simple, elegant desktop BSD operating system is now available. Install it on your computer today! <a href="#">Release notes</a></p>
+						<button type="button" class="btn btn-primary">Download</button>
+						<button type="button" class="btn btn-outline-light">Installation guide</button>
+					</div>
+					<div class="col-sm-12 col-md-6 col-xl-7 d-none d-sm-block">
+						<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							</div>
+							<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="http://ghostbsd.org/sites/default/files/Screenshot%20at%202022-01-17%2000-38-11.png" class="d-block w-100" alt="A screenshot of the GhostBSD desktop.">
+								<div class="carousel-caption d-none d-md-block">
+								<p>Our elegant MATE desktop environment.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="krita.png" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+								<p>Unleash your creativity with GIMP.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="vscode.png" class="d-block w-100" alt="...">
+								<div class="carousel-caption d-none d-md-block">
+								<p>VSCode, Microsofts IDE.</p>
+								</div>
+							</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="wave">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+						<path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+					</svg>
+				</div>
+			</header>
+		</section>
+		<section class="container pt-4">
+			<div class="row">
+				<h2>What is GhostBSD?</h2>
+				<div class="col-md-4">
+					<h4><i class="fa-brands fa-freebsd"></i> A FreeBSD base</h4>
+					<p>
+						Being based on FreeBSD, it ensures excellent performance, reliability and security. There is also a contrast in freedom compared to Linux; BSD having a very permissive license.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4><i class="fa-solid fa-compass-drafting"></i> Elegant design</h4>
+					<p>
+						Our MATE desktop environment provides an elegant and refined user experience, though other desktop environments are available through the <a href="#">Software Station.</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4><i class="fa-solid fa-cubes"></i> 30.000 packages</h4>
+					<p>While it comes with the standard applications of a web browser, LibreOffice suite, etc, there are 30.000 more software packages available.</p>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<h3>Latest news</h3>
+				<div class="col-md-4">
+					<h4><a href="#">GhostBSD Online Meetup</a></h4>
+					<p>
+						This meetup is for open discussions related to GhostBSD, OpenZFS, FreeBSD with a period of questions and answers. Everyone can suggest a subject of discussion.
+						<br><br>
+						When: Friday, Mar 18, 2022, 19:00 EST<br>
+						Where: <a href="#">https://meet.jit.si/GhostBSD_Meet</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4><a href="#">GhostBSD Online Meetup</a></h4>
+					<p>
+						This meetup is for open discussions related to GhostBSD, OpenZFS, FreeBSD with a period of questions and answers. Everyone can suggest a subject of discussion.
+						<br><br>
+						When: Saturday, Feb 19, 2022, 9:00 (AM) EST<br>
+						Where: <a href="#">https://meet.jit.si/GhostBSD_Meet</a>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h4><a href="#">GhostBSD 22.01.12 ISO is now available</a></h4>
+					<p>
+						This new ISO contains fixes, improvements, and software updates. Finally, the installer hanging at the cleaning stage for ZFS installation got fixed, and OpenRC and dhcpcd were removed from the base code. Furthermore, automation configuration for HD 7000 series and older GPUs has been added.
+					</p>
+				</div>
+			</div>
+			<hr>
+			<div class="row pb-3">
+				<h3>Partners</h3>
+				<p>We are pleased to have the support of our partners.</p>
+				<div class="col-md-6">
+					<div class="text-center pb-2">
+						<img class="img-fluid" src="honeyguide.png" alt="...">
+					</div>
+					<h6>Our South Africa Mirror is provided by Honeyguide.</h6>
+					<p>Honeyguide is a small Impact Enterprise operating since 2004 in Europe and Southern Africa, focusing on two complementary scopes. We center on Digitalisation & Digital Work Innovation, Open Source Technologies and for Southern Africa combine this with Select Entrepreneurship & Equity Investments. Please visit them at <a href="https://honeyguide.eu/">https://honeyguide.eu/</a> for more information.</p>
+				</div>
+				<div class="col-md-6">
+					<div class="text-center pb-2">
+						<img class="img-fluid" src="modirum.png" alt="...">
+					</div>
+					<h6>Our Norway Mirror is provided by Modirum.</h6>
+					<p>Modirum is a small but growing, multi-national company that provides both software and hosted services for banks, merchants, payment service providers and card companies all over the world. We use FreeBSD for all our hosted services, from routers and firewalls to application servers and databases. Please visit them at <a href="https://www.modirum.com/">https://www.modirum.com/</a> for more information.</p>
+				</div>
+			</div>
+			<divc class="row">
+
+			</divc>
+		</section>
+		<footer>
+			<div class="container pt-4">
+				<div class="row">
+					<div class="col-sm-3">
+						<img class="img-fluid" src="http://ghostbsd.org/sites/default/files/ghostbsd.png">
+						<p>We are able to develop and maintain GhostBSD thanks to your and our partners generosity.</p>
+					</div>
+					<div class="col-sm-3">
+						
+					</div>
+					<div class="col-sm-2">
+						<h5>Quick access</h5>
+						<ul class="navbar-nav">
+							<li>
+								<a href="#">Download</a>
+							</li>
+							<li>
+								<a href="#">Donate</a>
+							</li>
+							<li>
+								<a href="#">Get involved</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h5>Info</h5>
+						<ul class="navbar-nav">
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">FAQ</a>
+							</li>
+							<li>
+								<a href="#">Privacy & cookies</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<h5>Support</h5>
+						<ul class="navbar-nav">
+							<li>
+								<a href="#">Installation guide</a>
+							</li>
+							<li>
+								<a href="#">User wiki</a>
+							</li>
+							<li>
+								<a href="#">Forums</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="container">
+				<div class="row">
+					<p>The content and documentation available on <a href="ghostbsd.org">ghostbsd.org</a> is under the terms of the Creative Commons Attribution 4.0 International License (CC BY 4.0)</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+		<script>
+			    $(document).ready(function(){
+					$(window).scroll(function(){
+						var scroll = $(window).scrollTop();
+						if (scroll > 20) {
+							$(".navbar").css("background" , "rgba(0, 0, 0, 0.84)");
+						}
+						else{
+							$(".navbar").css("background" , "rgba(0, 0, 0, 0)");  	
+						}
+					})
+				})
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+    color: #212529;
+}
+
+.blue-gradient {
+    background: rgb(51,51,51);
+    background: -moz-linear-gradient(146deg, rgba(51,51,51,1) 18%, rgba(0,183,255,1) 100%);
+    background: -webkit-linear-gradient(146deg, rgba(51,51,51,1) 18%, rgba(0,183,255,1) 100%);
+    background: linear-gradient(146deg, rgba(51,51,51,1) 18%, rgba(0,183,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#333333",endColorstr="#00b7ff",GradientType=1); 
+    margin-top: -45px;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+footer {
+    background-color: rgba(51,51,51,1);
+    color: white;
+}
+.nav-link {
+    color: white;
+}
+
+.show, .collapsing {
+    background: rgba(0, 0, 0, 0.84);
+}
+
+header {
+    padding: 4rem 0rem 5rem 0rem;
+    color: white;
+}
+
+.pattern-overlay::before {
+    content: "";
+    background: url("overlay.png");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.pattern-overlay {
+    position: relative;
+    z-index: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 180, 194);
+}
+a:hover {
+    color: rgb(100, 100, 100);
+}
+
+.navbar {
+    height: 45px;
+    transition: all 0.16s;
+    padding: 2px;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.btn-primary {
+    background-color: rgb(0, 180, 194);
+    border-color: rgb(0, 180, 194);
+}
+
+.carousel {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
